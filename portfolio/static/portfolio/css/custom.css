@@ -1,0 +1,315 @@
+/* Imported Fonts*/
+
+@font-face {
+    font-family: 'CuteNotes-EL7r';
+    src: local('CuteNotes-EL7r'),
+         url('../../fonts/cute-notes-font/CuteNotes-EL7r.ttf') format("truetype");
+  }
+
+
+
+/* Base*/
+body {
+    background-image: url('../background_image.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    opacity: 0.9;
+    
+}
+
+#alt-home-button {
+    background-color: #000000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#alt-home-button:hover {
+    background-color: #383838;
+}
+
+.nav-link {
+    color:#F5F5F5 !important;
+}
+
+.nav-link:hover {
+    color: #000000 !important;
+}
+
+/*  Home */
+
+.title {
+    color: 	#202020;
+    padding-top: 65px;
+}
+
+#home-title {
+    font-size: 60px;
+    font-family: 'CuteNotes-EL7r';
+}
+
+.small-description {
+    background-color: #F5F5F5;
+}
+
+.mid-text-box {
+    background-color: 	#202020;
+
+}
+
+.mid-text-title {
+    font-size: 60px;
+    font-family: 'CuteNotes-EL7r';
+    color: #E0E0E0;
+    background-color: #202020;
+}
+
+
+
+.mid-text {
+    color: #202020;
+    background-color: #F5F5F5;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mid-text-box {
+    background-color: #F5F5F5;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.projects-section {
+    background-color: #D3D3D3;
+    padding: 20px;
+}
+
+.project-title {
+    color: 	#181818;
+    text-decoration: underline;
+}
+
+.projects-title-box {
+    font-size: 60px !important;
+    font-family: 'CuteNotes-EL7r';
+    background-color: #383838;
+    color:#F5F5F5;
+    text-align: center;
+}
+
+#project-image {
+    background-color: black;
+    border: 10px;
+    margin: auto;
+}
+
+.list-inline-item {
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+/* About me page*/
+
+#about-me-title {
+    font-size: 60px;
+    font-family: 'CuteNotes-EL7r';
+    padding-top: 90px;
+}
+
+#about-me-title-box{
+    color: #F5F5F5;
+    background-color:#202020;
+}
+
+#about-me-textbox {
+    padding: 15px;
+    text-align: center;
+    color: #080808;
+    background-color: 	#F5F5F5;
+    opacity: 5;
+}
+
+#about-me-text {
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+#github-link {
+    color: #080808;
+    text-decoration: underline;
+    
+}
+
+#github-link:hover {
+    color:blue;
+}
+
+/* skills page */
+
+#skills-title {
+    font-size: 60px;
+    font-family: 'CuteNotes-EL7r';
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#all-skills {
+    padding: 50px;
+    text-align: center;
+    list-style-position: inside;
+    margin: auto;
+    background-color: #181818;
+    color: aliceblue;
+    font-size: large;
+}
+
+/* Contact me*/
+
+#contact-heading {
+    background-color: #080808;
+    color: aliceblue;
+    margin-top: 10%;
+    text-align: center;
+
+}
+
+#contact-details-text {
+    font-size: 80px !important;
+    font-family: 'CuteNotes-EL7r';
+}
+
+#contact-me-title {
+    background-color: aliceblue;
+    color: #080808;
+    text-align: center;
+    margin-top: 2%;
+    padding: 10px;
+    font-size: x-large;
+}
+
+
+#contact-card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: #000000;
+    width: 40%;
+    padding: 2%;
+    color: aliceblue;
+    border-radius: 10%;
+    font-size: larger;
+}
+
+/* Blog  */
+#blog-content {
+    padding-top: 80px;
+}
+
+#blog-title {
+    text-align: center;
+    padding: 10px;
+    background-color: #181818;
+    color: aliceblue;
+    font-size: 60px;
+    font-family: 'CuteNotes-EL7r';    
+}
+
+#number-blogs {
+    background-color: aliceblue;
+    color: #181818;
+    padding: 15px;
+    width: 50%;
+}
+
+.blog-post {
+    background-color: #888888;
+    color: #000000;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10%;
+    max-width: 60%;
+}
+
+#blog-post-title {
+    text-align: left;
+    padding-left: 15%;
+    text-decoration: underline;
+    color: #000000
+}
+
+#blog-post-date {
+    color: aliceblue;
+}
+
+#blog-post-text {
+    padding-left: 2%;
+    font-size: large;
+}
+
+/* Blog detail page */
+
+#blog-detail-content {
+    padding: 10%;
+}
+
+#blog-detail-title {
+    text-align: center;
+    background-color: #181818;
+    color: aliceblue;
+    font-size: 60px;
+    font-family: 'CuteNotes-EL7r'; 
+
+}
+
+#blog-detail-date {
+    background-color: aliceblue;
+    color: #080808;
+
+}
+
+#blog-detail-post {
+    font-size: larger;
+    background-color: #181818;
+    color: aliceblue;
+    padding: 2%;
+}
+
+/* project detail page */
+
+#project-detail-page {
+    padding-top: 30px;
+}
+
+#project-detail-title {
+    padding: 1%;
+    font-size: xx-large;
+    color: #181818;
+    background-color: aliceblue;
+}
+
+#project-detail-description {
+    background-color: #181818;
+    color: aliceblue;
+
+}
+
+#project-detail-github-link {
+    color: #080808;
+    text-decoration: underline;
+    background-color: aliceblue;
+
+}
+
+#github-link:hover {
+    color:blue;
+}
+
+#footer {
+    text-align: center;
+    padding: 50px;
+}

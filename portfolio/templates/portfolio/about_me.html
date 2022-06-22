@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thomas Wasnidge</title>
+</head>
+<body>
+{% block content %}
+    <div class="container">
+        <div class="text-center">
+            <div id="about-me-title-box">
+                <h2 id="about-me-title">Hello There...</h2>
+            </div>
+        </div>
+        <div id="about-me-textbox">
+            <p id="about-me-text">
+                I'm Tom and welcome to my portfolio website, and thankyou for taking the time to check it out.
+                After slinging drinks, running and working in teams, and opening bars for the last couple of years, I have decided
+                to follow my passions and teach myself the necessary skills to move into the field of python programming and 
+                data analytics.
+                <br>
+                I've always had a natural aptitude for maths, problem solving and building things myself, this is what made me decide to
+                get into programming, as building something myself from scratch I find really appealing and enjoyable, I realised this at a young
+                age when I could sit and play with Lego for hours.  After teaching myself python, getting a few certifications, and building some projects,
+                I wanted to find a way to be able to apply my skills better.  This led me down the road to data analytics, which is a fascinating field in 
+                which I've found I can apply all my love for building things, mathematics and natural curiosity.
+                <br>
+                When I'm not cleaning datasets, analysing data or building projects, my other main hobby is bouldering, I find climbing is not only a great workout for my body,
+                but for my mind as well, with there being so many different ways to climb certain routes or boulders, half of the fun is determining the best and easiest
+                way to get up. Sometimes I'll get to a boulder, either outdoors or in the gym, and not even be able to hold on to the first move, and then after thinking for
+                a few minutes, tweaking my hand or body position, and the move becomes easy, and its this kind of problem solving application that really 
+                drew me into the sport.
+                
+                
+            </p>
+        </div>
+        <div class="row justify-content-center my-3">
+            <div class="col-5">
+            <img src="{% static 'portfolio/meagainweb.jpeg' %}" class="img-fluid" height ='500' width="400">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+</body>
+</html>

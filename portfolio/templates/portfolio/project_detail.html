@@ -1,0 +1,18 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+{% load static %}
+<div class="container">
+    <hr>
+    <div id="project-detail-page">
+        <h3 id="project-detail-title">{{project.title}}</h3>
+        <p id="project-detail-description">{{project.description }}</p>
+        {% if project.url %}
+        <a id="project-detail-github-link" href="{{project.url}}" target="_blank" >Github Repository</a>
+        {% endif %}
+        <a href="{{project.url}}" target="_blank"><img id="project-detail-image" src='{{project.image.url}}' class="img-fluid mb-2"></a>
+    </div>
+</div>
+
+
+
+{% endblock %}

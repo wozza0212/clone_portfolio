@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thomas Wasnidge</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <div class="small-description">
+                <h1 id="home-title" class="title">Thomas Wasnidge</h1>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><h2>Data Analyst</h2></li>
+                    <li class="list-inline-item"><h2>Python Programmer</h2></li>
+                    <li class="list-inline-item"><h2>Climber</h2></li>
+                </ul>
+            </div>
+
+        </div>
+        <hr>
+
+        <div class="row justify-content-center my-3">
+            <div class="col-5">
+            <img src="{% static 'portfolio/me.jpeg' %}" class="img-fluid" height ='500' width="400">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="text-center">
+            <div class="mid-text-box">
+                <div class="mid-text-title-box">
+                    <h1 class="mid-text-title">Why this Website?</h1>
+                </div>
+                <div class="mid-text-box">
+                    <h4 class="mid-text">Welcome to my personal portfolio website, I've created this website myself
+                        using the Django framework to apply my technical abilities in Python.
+                        The site itself is a bit of a side project as I never really planned to get 
+                        into web design, for that reason the site is quite basic and a constant work in progress
+                        type of project.
+                        However I thought it would be a great place to show case some of my python and 
+                        Data Analytics projects. So thank you very much for taking the time to view it.
+                    </h4>
+                </div>
+                <hr>
+            </div>
+
+        </div>
+        
+        <a name="projects"></a>
+        <div class="projects-section">
+            <div class="projects-title-box">
+                <h1>Projects</h1>
+            </div>
+            <hr>
+            <div class="row">
+                    {% for project in projects %}
+                    <div class="col-lg-4 col-md-6">
+
+                            <a class="project-title" href="{% url 'project_detail' project.id %}"><h3>{{project.title}}</h3></a>
+                            <p>{{project.description|truncatechars:80}}</p>
+                            {% if project.url %}
+                            <a id="github-link" href="{{project.url}}" target="_blank" >Github Repository</a>
+                            {% endif %}
+
+
+                            <a href="{{project.url}}" target="_blank" ><img src='{{project.image.url}}' class="img-fluid mb-2" id="project-image"></a>
+
+
+                    </div>
+                    {% endfor %}
+            </div>
+        </div>
+
+        <hr>
+        
+    </div>
+
+
+    {% endblock %}
+</body>
